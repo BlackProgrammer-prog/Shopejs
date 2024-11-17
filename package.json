@@ -1,0 +1,31 @@
+{
+  "name": "shopserver",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "This project is Server of Website, that about Shoes Shop",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "npx json-server --watch db.json --static ./public --port 5173"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "vite": "^5.4.10"
+  },
+  "keywords": [
+    "server",
+    "shopserver",
+    "shoesShop",
+    "json-server"
+  ],
+  "author": "aziziparham2020@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
