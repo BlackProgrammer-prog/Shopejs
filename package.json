@@ -9,7 +9,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server": "npx json-server --watch db.json --static ./public --port 5173"
+    "server": "npx json-server --watch db.json --static ./public --port 3000"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

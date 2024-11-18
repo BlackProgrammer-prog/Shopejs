@@ -1,6 +1,11 @@
 import '../style/style.css'
-// import {progressBar} from './progress-bar.js';
-// document.addEventListener("DOMContentLoaded", progressBar);
+import {progressBar} from './progress-bar.js';
+document.addEventListener("DOMContentLoaded", progressBar);
+import {Begin} from "./Begin.js";
+Begin();
+import {Login} from "./Login.js";
+Login();
+
 
 
 // import javascriptLogo from './javascript.svg'

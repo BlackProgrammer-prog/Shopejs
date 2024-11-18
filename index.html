@@ -7,23 +7,80 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="src/style/style.css">
   </head>
-  <body>
+  <body class="m-0 p-0" style="direction: rtl">
     <!--    <div id="app"></div>-->
-    <div class="m-auto w-[80%] h-[40%] mt-[20%] hidden" id="loading">
+    <div class="m-auto w-[80%] h-[40%] mt-[20%]" id="loading">
       <p class="text-red-900 text-center">loading</p>
       <div id="progress-container" class="top-0 left-0 bg-gray-200 w-full h-[10px] m-auto">
         <div id="progress-bar" class="h-full bg-green-500 transition-all ease-in-out"></div>
       </div>
     </div>
-    <div class="m-auto h-screen flex justify-center items-center">
-      <div class="w-[300px]">
-        <img src="src/assets/images.png" alt="welcome" class="h-[80px] w-[180px] block items-center content-center"/>
-        <h1 class="block">سلام دوست عزیز
-          به فروشگاه *** خوش امدید. این کد تخفیف هدیه برای مشتریان جدید ماست.
-          از خرید خود لذت ببرید.</h1>
+    <div class="hidden" id="welcome">
+      <div class="m-auto h-screen flex justify-center items-center">
+        <div class="w-[350px]">
+          <div class="flex justify-center items-center">
+            <img src="src/assets/images.png" alt="welcome" class="h-[80px] w-[180px] block items-center content-center"/>
+          </div>
+          <h1 class="block text-center">سلام دوست عزیز
+            به فروشگاه کفش خوش امدید.
+          </h1>
+          <div class="m-auto">
+            <p class="block text-center text-red-900">این کد تخفیف هدیه برای مشتریان جدید ماست:</p>
+            <p class="font-bold block text-center">PA@123</p>
+          </div>
+          <p class="text-center">از خرید خود لذت ببرید.</p>
+        </div>
       </div>
+    </div>
+    <div class="hidden" id="introduce-one">
+      <div class="m-auto h-screen flex justify-center items-center">
+        <div class="w-[350px]">
+          <h1 class="text-center text-3xl">معرفی ما</h1>
+          <br>
+          <p class="text-center">فروشگاه کفش ارائه دهنده انواع کفش در شهر تهران است.
+            ما با تمرکز بر سه ویژگی، یعنی: قابل اعتماد بودن، خدمات مشتری و منحصر به فرد بودن. در کنار شما خواهیم بود. فروشگاه کفش در سال 1403 توسط پرهام عزیزی تأسیس شد، فروشگاه کفش فعالیت خود را در خانه آغاز کرده.</p>
+          <p class="text-3xl text-center">1</p>
+        </div>
+      </div>
+    </div>
+    <div class="hidden" id="introduce-two">
+      <div class="m-auto h-screen flex justify-center items-center">
+        <div class="w-[350px]">
+          <p class="text-center">هنگامی که پرهام عزیزی برای اولین بار شروع به فعالیت کرد، اشتیاق او به فراهم کردن بهترین تجهیزات او را به ایجاد سایت فروشگاهی سوق داد.
+            کار‌های روزانه به او انگیزه داد تا کار سخت و الهام بخش را به یک فروشگاه آنلاین پررونق تبدیل کند.
+            ما اکنون در سرتاسر ایران به مشتریانمان خدمات ارائه می دهیم، و از اینکه بخشی از تجارت منصفانه از فروش کفش هستیم، بسیار خوشحالیم. امیدواریم از محصولات ما به همان اندازه که ما از ارائه آن‌ها به شما لذت می‌‌بریم لذت ببرید.</p>
+          <p class="text-3xl text-center">2</p>
+        </div>
+      </div>
+    </div>
+    <div class="hidden" id="login">
+      <div class="m-auto h-screen flex justify-center items-center">
+        <form class="w-[350px] border border-solid border-black rounded-[20px]" id="FormLogin">
+          <h1 class="text-center font-bold">ورود به حساب کاربری</h1>
+          <br>
+          <label class="block text-center"> نام کاربری
+            <br>
+            <input type="text" class="border border-solid border-gray-400 rounded-[10px] w-[220px] h-[27px]" id="UserName">
+          </label>
+          <br>
+          <label class="block text-center">رمز عبور
+            <br>
+            <input type="text" class="border border-solid border-gray-400 rounded-[10px] w-[220px] h-[27px]" id="Password">
+          </label>
+          <div class="m-auto flex justify-center mt-[40px] pb-[20px]">
+            <div>
+              <button class="border border-solid border-black rounded-[10px] w-[100px] text-red-900 block mb-[10px]" type="submit" id="submit">ورود</button>
+              <label class="block"> Remember me
+                <input type="checkbox" id="RememberMe">
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="HomeSite" class="hidden">
+
     </div>
     <script type="module" src="./src/script/main.js"></script>
   </body>
 </html>
- 
