@@ -5,9 +5,27 @@ import {Begin} from "./Begin.js";
 Begin();
 import {Login} from "./Login.js";
 Login();
-
-
-
+export function ProductStructureDiv(){
+    const DropdownButton = document.getElementById("DropdownButton");
+    const SizeList = document.getElementById("SizeList");
+    DropdownButton.addEventListener("click",(event)=>{
+        event.stopPropagation();
+        // SizeList.style.display = SizeList.style.display==="none" ? "block" : "none";
+        if (SizeList.style.display==="none"||SizeList.style.display===""){
+            SizeList.style.display = "block";
+        }
+        else {
+            SizeList.style.display = "none";
+        }
+    });
+    document.addEventListener("click",()=>{
+        SizeList.style.display = "none";
+    });
+    SizeList.addEventListener("click",(event)=>{
+        event.stopPropagation();
+    });
+}
+ProductStructureDiv();
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'
 // import { setupCounter } from './counter.js'
