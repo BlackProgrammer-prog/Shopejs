@@ -5,12 +5,13 @@ import {Begin} from "./Begin.js";
 Begin();
 import {Login} from "./Login.js";
 Login();
-export function ProductStructureDiv(){
+function ProductStructureDiv(){
     const DropdownButton = document.getElementById("DropdownButton");
     const SizeList = document.getElementById("SizeList");
+    const DropdownButtonColor = document.getElementById("DropdownButtonColor");
+    const InputColor = document.getElementById("InputColor");
     DropdownButton.addEventListener("click",(event)=>{
         event.stopPropagation();
-        // SizeList.style.display = SizeList.style.display==="none" ? "block" : "none";
         if (SizeList.style.display==="none"||SizeList.style.display===""){
             SizeList.style.display = "block";
         }
@@ -24,8 +25,39 @@ export function ProductStructureDiv(){
     SizeList.addEventListener("click",(event)=>{
         event.stopPropagation();
     });
+    DropdownButtonColor.addEventListener("click",(event)=>{
+        event.stopPropagation();
+        if (InputColor.style.display==="none"||InputColor.style.display===""){
+            InputColor.style.display="block";
+        }
+        else {
+            InputColor.style.display="none";
+        }
+    });
+    document.addEventListener("click",()=>{
+        InputColor.style.display="none";
+    });
+    InputColor.addEventListener("click",(event)=>{
+        event.stopPropagation();
+    })
 }
 ProductStructureDiv();
+function Like(){
+    const DomImage = document.getElementById("like");
+    const image1 = "src/assets/whitelike.png";
+    const image2 = "src/assets/Red heart.png";
+    DomImage.addEventListener("click",()=>{
+        if (DomImage.src.includes(image1)){
+            DomImage.src = image2;
+        }
+        else {
+            DomImage.src = image1;
+        }
+    })
+}
+Like();
+
+
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'
 // import { setupCounter } from './counter.js'
