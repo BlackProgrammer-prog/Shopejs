@@ -56,6 +56,8 @@ function Like(){
     })
 }
 Like();
+import {product} from "./Product.js";
+product(15);
 
 
 // import javascriptLogo from './javascript.svg'
