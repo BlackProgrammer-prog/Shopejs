@@ -400,4 +400,398 @@ ButtonBack.addEventListener("click",()=>{
     DomHomeSite.style.display = "block";
     DomProduct.style.display = "none";
 })
+// ----------------------------------------------------------------------------------
+    const Product01 = document.getElementById("product01");
+    const Product02 = document.getElementById("product02");
+    const Product03 = document.getElementById("product03");
+    const Product04 = document.getElementById("product04");
+    const Product05 = document.getElementById("product05");
+    const Product06 = document.getElementById("product06");
+    const Product07 = document.getElementById("product07");
+    const Product08 = document.getElementById("product08");
+    const Product09 = document.getElementById("product09");
+    const Product010 = document.getElementById("product010");
+    const Product011 = document.getElementById("product011");
+    const Product012 = document.getElementById("product012");
+    const Product013 = document.getElementById("product013");
+    const Product014 = document.getElementById("product014");
+    const Product015 = document.getElementById("product015");
+    const Product016 = document.getElementById("product016");
+    const Product017 = document.getElementById("product017");
+    const Product018 = document.getElementById("product018");
+    const Product019 = document.getElementById("product019");
+    const Product020 = document.getElementById("product020");
+    const Product021 = document.getElementById("product021");
+    const Product022 = document.getElementById("product022");
+    const Product023 = document.getElementById("product023");
+    const Product024 = document.getElementById("product024");
+    const Product025 = document.getElementById("product025");
+    const Product026 = document.getElementById("product026");
+    const Product027 = document.getElementById("product027");
+    const Product028 = document.getElementById("product028");
+    const Product029 = document.getElementById("product029");
+    const Product030 = document.getElementById("product030");
+    const Product031 = document.getElementById("product031");
+    const Product032 = document.getElementById("product032");
+    const Product033 = document.getElementById("product033");
+    const Product034 = document.getElementById("product034");
+    const Product035 = document.getElementById("product035");
+    const Product036 = document.getElementById("product036");
+    const Product037 = document.getElementById("product037");
+    const Product038 = document.getElementById("product038");
+    const Product039 = document.getElementById("product039");
+    const Product040 = document.getElementById("product040");
+    const Product041 = document.getElementById("product041");
+    const Product042 = document.getElementById("product042");
+    const Product043 = document.getElementById("product043");
+    const Product044 = document.getElementById("product044");
+    const Product045 = document.getElementById("product045");
+    const Product046 = document.getElementById("product046");
+    const Product047 = document.getElementById("product047");
+    const Product048 = document.getElementById("product048");
+    const Product049 = document.getElementById("product049");
+    const Product050 = document.getElementById("product050");
+    const Product051 = document.getElementById("product051");
+    const Product052 = document.getElementById("product052");
+    const Product053 = document.getElementById("product053");
+    const Product054 = document.getElementById("product054");
+    const Product055 = document.getElementById("product055");
+    const Product056 = document.getElementById("product056");
+    Product01.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=1;
+        product(DivNum);
+    });
+    Product02.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=2;
+        product(DivNum);
+    });
+    Product03.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=3;
+        product(DivNum);
+    });
+    Product04.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=4;
+        product(DivNum);
+    });
+    Product05.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=5;
+        product(DivNum);
+    });
+    Product06.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=6;
+        product(DivNum);
+    });
+    Product07.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=7;
+        product(DivNum);
+    });
+    Product08.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=8;
+        product(DivNum);
+    });
+    Product09.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=9;
+        product(DivNum);
+    });
+    Product010.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=10;
+        product(DivNum);
+    });
+    Product011.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=11;
+        product(DivNum);
+    });
+    Product012.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=12;
+        product(DivNum);
+    });
+    Product013.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=13;
+        product(DivNum);
+    });
+    Product014.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=14;
+        product(DivNum);
+    });
+    Product015.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=15;
+        product(DivNum);
+    });
+    Product016.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=16;
+        product(DivNum);
+    });
+    Product017.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=17;
+        product(DivNum);
+    });
+    Product018.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=18;
+        product(DivNum);
+    });
+    Product019.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=19;
+        product(DivNum);
+    });
+    Product020.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=20;
+        product(DivNum);
+    });
+    Product021.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=21;
+        product(DivNum);
+    });
+    Product022.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=22;
+        product(DivNum);
+    });
+    Product023.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=23;
+        product(DivNum);
+    });
+    Product024.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=24;
+        product(DivNum);
+    });
+    Product025.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=25;
+        product(DivNum);
+    });
+    Product026.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=26;
+        product(DivNum);
+    });
+    Product027.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=27;
+        product(DivNum);
+    });
+    Product028.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=28;
+        product(DivNum);
+    });
+    Product029.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=29;
+        product(DivNum);
+    });
+    Product030.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=30;
+        product(DivNum);
+    });
+    Product031.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=31;
+        product(DivNum);
+    });
+    Product032.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=32;
+        product(DivNum);
+    });
+    Product033.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=33;
+        product(DivNum);
+    });
+    Product034.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=34;
+        product(DivNum);
+    });
+    Product035.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=35;
+        product(DivNum);
+    });
+    Product036.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=36;
+        product(DivNum);
+    });
+    Product037.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=37;
+        product(DivNum);
+    });
+    Product038.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=38;
+        product(DivNum);
+    });
+    Product039.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=39;
+        product(DivNum);
+    });
+    Product040.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=40;
+        product(DivNum);
+    });
+    Product041.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=41;
+        product(DivNum);
+    });
+    Product042.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=42;
+        product(DivNum);
+    });
+    Product043.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=43;
+        product(DivNum);
+    });
+    Product044.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=44;
+        product(DivNum);
+    });
+    Product045.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=45;
+        product(DivNum);
+    });
+    Product046.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=46;
+        product(DivNum);
+    });
+    Product047.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=47;
+        product(DivNum);
+    });
+    Product048.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=48;
+        product(DivNum);
+    });
+    Product049.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=49;
+        product(DivNum);
+    });
+    Product050.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=50;
+        product(DivNum);
+    });
+    Product051.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=51;
+        product(DivNum);
+    });
+    Product052.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=52;
+        product(DivNum);
+    });
+    Product053.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=53;
+        product(DivNum);
+    });
+    Product054.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=54;
+        product(DivNum);
+    });
+    Product055.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=55;
+        product(DivNum);
+    });
+    Product056.addEventListener("click",()=>{
+        DomHomeSite.style.display = "none";
+        DomProduct.style.display = "block";
+        DivNum=56;
+        product(DivNum);
+    });
+
 }
