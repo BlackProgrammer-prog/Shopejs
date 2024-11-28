@@ -401,14 +401,14 @@
       </main>
       <main>
         <hr class="w-full mb-[5px]">
-        <img src="src/assets/nike/1.webp" alt="imageProducts" class="m-auto w-[260px]">
+        <img src="src/assets/nike/1.webp" alt="imageProducts" class="m-auto w-[260px]" id="ProductPhoto">
         <br>
         <div class="flex justify-between items-center w-[92%] m-auto">
-          <h2>کفش nike</h2>
+          <h2 id="ProductName">کفش nike</h2>
           <img src="src/assets/whitelike.png" alt="like" class="inline w-[20px]" id="like">
         </div>
         <br>
-        <p class="border border-solid border-gray-500 w-[92%] m-auto rounded-[15px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, ipsam!</p>
+        <p class="border border-solid border-gray-500 w-[92%] m-auto rounded-[15px]" id="ProductDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, ipsam!</p>
         <br>
         <div class="flex justify-between items-center w-[90%] m-auto">
           <div>
@@ -416,11 +416,11 @@
               <p>سایز کفش را انتخاب کنید:</p>
             </div>
             <div id="SizeList" class="absolute z-10 border border-solid border-gray-300 rounded-lg shadow-lg overflow-y-auto w-[150px]">
-              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center">45</p></div>
+              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center" id="Size1">45</p></div>
               <hr class="bg-black">
-              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center">46</p></div>
+              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center" id="Size2">46</p></div>
               <hr class="bg-black">
-              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center">47</p></div>
+              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center" id="Size3">47</p></div>
             </div>
           </div>
           <div>
@@ -428,11 +428,13 @@
               <p>رنگ کفش را انتخاب کنید:</p>
             </div>
             <div id="InputColor" class="absolute z-10 border border-solid border-gray-300 rounded-lg shadow-lg overflow-y-auto w-[150px]">
-              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center">ابی</p></div>
+              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center" id="Color1">ابی</p></div>
               <hr class="bg-black">
-              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center">سبز</p></div>
+              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center" id="Color2">سبز</p></div>
               <hr class="bg-black">
-              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center">قرمز</p></div>
+              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center" id="Color3">قرمز</p></div>
+              <hr>
+              <div class="m-auto cursor-pointer hover:bg-gray-200"><p class="text-center" id="Color4">فیروزه ایی</p></div>
             </div>
           </div>
         </div>
@@ -440,19 +442,19 @@
         <br><br><br>
         <div class="m-auto w-[90%]">
           <label class="block">تعداد:
-            <input type="number" placeholder="1" class="mr-[10px] rounded-[10px] border border-solid w-[120px]">
+            <input type="number" placeholder="1" class="mr-[10px] rounded-[10px] border border-solid w-[120px]" id="ProductNumber">
           </label>
           <div class="flex justify-between items-center">
             <div class="inline">
-              <p class="inline">قیمت:145$</p>
+              <p class="inline" id="ProductPrice">قیمت:145$</p>
             </div>
             <button class="border border-solid border-black inline bg-red-500 rounded-[10px] w-[135px] h-[30px]">افزودن به سبد خرید</button>
           </div>
         </div>
         <br>
         <div class="w-[90%] m-auto">
-          <p>تعداد بازدید : 12</p>
-          <p>تعداد خرید : 5</p>
+          <p id="VisitNumber">تعداد بازدید : 12</p>
+          <p id="PurchasesNumber">تعداد خرید : 5</p>
         </div>
       </main>
       <footer class="w-full bg-red-800 mt-[20px]">
