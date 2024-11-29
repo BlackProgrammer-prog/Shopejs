@@ -58,7 +58,48 @@ function Like(){
 Like();
 import {UserClick} from "./UserClick.js";
 UserClick();
-
+function DivMenU(){
+    let Brands = document.getElementById("Brands");
+    let Menu = document.getElementById("Menu");
+    Brands.addEventListener("click",(event)=>{
+        event.stopPropagation();
+        if (Menu.style.display==="none"|| Menu.style.display===""){
+            Menu.style.display = "block";
+        }
+        else {
+            Menu.style.display = "none";
+        }
+    });
+    document.addEventListener("click",()=>{
+        Menu.style.display = "none";
+    });
+    Menu.addEventListener("click",(event)=>{
+        event.stopPropagation();
+    });
+}
+DivMenU();
+import {search} from "./search.js";
+import {ShowHistory} from "./search.js";
+let MagnifyingGlassSearch = document.getElementById("MagnifyingGlassSearch");
+MagnifyingGlassSearch.addEventListener("click",()=>{
+    search();
+    ShowHistory();
+})
+function ClickInputSearch(){
+    const InputSearch = document.getElementById("search");
+    const HistorySearch = document.getElementById("HistorySearch");
+    InputSearch.addEventListener("click",(event)=>{
+        event.stopPropagation();
+        HistorySearch.style.display = "block";
+    });
+    document.addEventListener("click",()=>{
+        HistorySearch.style.display = "none";
+    });
+    HistorySearch.addEventListener("click",(event)=>{
+        event.stopPropagation();
+    });
+}
+ClickInputSearch();
 
 
 

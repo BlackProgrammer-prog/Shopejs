@@ -1,3 +1,4 @@
+
 let DivNum;
 import {product} from "./Product.js";
 export function UserClick(){
@@ -793,5 +794,208 @@ ButtonBack.addEventListener("click",()=>{
         DivNum=56;
         product(DivNum);
     });
-
+// ---------------------------------------------------------------------------
+    let CheckBoxAdidas = document.getElementById("CheckBoxAdidas");
+    let CheckBoxAsics = document.getElementById("CheckBoxAsics");
+    let CheckBoxConverse = document.getElementById("CheckBoxConverse");
+    let CheckBoxNewbalance = document.getElementById("CheckBoxNewbalance");
+    let CheckBoxNike = document.getElementById("CheckBoxNike");
+    let CheckBoxPuma = document.getElementById("CheckBoxPuma");
+    let CheckBoxReebok = document.getElementById("CheckBoxReebok");
+    const adidas = document.getElementById("adidas");
+    const asics = document.getElementById("asics");
+    const converse = document.getElementById("converse");
+    const newbalance = document.getElementById("newbalance");
+    const nike = document.getElementById("nike");
+    const puma = document.getElementById("puma");
+    const reebok = document.getElementById("reebok");
+    const productAllMain = document.getElementById("productAllMain");
+    let adidasBool =false;
+    let asicsBool = false;
+    let converseBool = false;
+    let newbalanceBool = false;
+    let nikeBool = false;
+    let pumaBool = false;
+    let reebokBool = false;
+    CheckBoxAdidas.addEventListener("change",()=>{
+        if (CheckBoxAdidas.checked){
+            productAllMain.style.display = "none";
+            adidas.style.display = "block";
+            adidasBool = true;
+        }
+        else {
+            adidas.style.display = "none";
+            adidasBool = false;
+        }
+    });
+    CheckBoxAsics.addEventListener("change",()=>{
+        if (CheckBoxAsics.checked){
+            productAllMain.style.display = "none";
+            asics.style.display = "block";
+            asicsBool = true;
+        }
+        else {
+            asics.style.display = "none"
+            asicsBool = false;
+        }
+    });
+    CheckBoxConverse.addEventListener("change",()=>{
+        if (CheckBoxConverse.checked){
+            productAllMain.style.display = "none";
+            converse.style.display = "block";
+            converseBool = true;
+        }
+        else {
+            converse.style.display = "none";
+            converseBool = false;
+        }
+    });
+    CheckBoxNewbalance.addEventListener("change",()=>{
+        if (CheckBoxNewbalance.checked){
+            productAllMain.style.display = "none";
+            newbalance.style.display = "block";
+            newbalanceBool = true;
+        }
+        else {
+            newbalance.style.display = "none";
+            newbalanceBool = false;
+        }
+    });
+    CheckBoxNike.addEventListener("change",()=>{
+        if (CheckBoxNike.checked){
+            productAllMain.style.display = "none";
+            nike.style.display = "block";
+            nikeBool = true;
+        }
+        else {
+            nike.style.display = "none";
+            nikeBool = false;
+        }
+    });
+    CheckBoxPuma.addEventListener("change",()=>{
+        if (CheckBoxPuma.checked){
+            productAllMain.style.display = "none";
+            puma.style.display = "block";
+            pumaBool = true;
+        }
+        else {
+            puma.style.display = "none";
+            pumaBool = false;
+        }
+    });
+    CheckBoxReebok.addEventListener("change",()=>{
+        if (CheckBoxReebok.checked){
+            productAllMain.style.display = "none";
+            reebok.style.display = "block";
+            reebokBool = true;
+        }
+        else {
+            reebok.style.display = "none";
+            reebokBool = false;
+        }
+    });
+    const tik = document.getElementById("tik");
+    tik.addEventListener("change",()=>{
+        let Bool1 = adidasBool && asicsBool && converseBool && newbalanceBool && nikeBool && pumaBool && reebokBool;
+        let Bool2 = !adidasBool && !asicsBool && !converseBool && !newbalanceBool && !nikeBool && !pumaBool && !reebokBool;
+        if (Bool1 || Bool2){
+            adidas.style.display = "none";
+            asics.style.display = "none";
+            converse.style.display = "none";
+            newbalance.style.display = "none";
+            nike.style.display = "none";
+            puma.style.display = "none";
+            reebok.style.display = "none";
+            productAllMain.style.display = "flex";
+        }
+    });
+    const GoToAdidas = document.getElementById("GoToAdidas");
+    const GoToAsics = document.getElementById("GoToAsics");
+    const GoToConverse = document.getElementById("GoToConverse");
+    const GoToNewbalance = document.getElementById("GoToNewbalance");
+    const GoToNike = document.getElementById("GoToNike");
+    const GoToPuma = document.getElementById("GoToPuma");
+    const GoToReebok = document.getElementById("GoToReebok");
+    GoToAdidas.addEventListener("click",()=>{
+        adidas.style.display = "block";
+        asics.style.display = "none";
+        converse.style.display = "none";
+        newbalance.style.display = "none";
+        nike.style.display = "none";
+        puma.style.display = "none";
+        reebok.style.display = "none";
+        productAllMain.style.display = "none";
+    });
+    GoToAsics.addEventListener("click",()=>{
+        adidas.style.display = "none";
+        asics.style.display = "block";
+        converse.style.display = "none";
+        newbalance.style.display = "none";
+        nike.style.display = "none";
+        puma.style.display = "none";
+        reebok.style.display = "none";
+        productAllMain.style.display = "none";
+    });
+    GoToConverse.addEventListener("click",()=>{
+        adidas.style.display = "none";
+        asics.style.display = "none";
+        converse.style.display = "block";
+        newbalance.style.display = "none";
+        nike.style.display = "none";
+        puma.style.display = "none";
+        reebok.style.display = "none";
+        productAllMain.style.display = "none";
+    });
+    GoToNewbalance.addEventListener("click",()=>{
+        adidas.style.display = "none";
+        asics.style.display = "none";
+        converse.style.display = "none";
+        newbalance.style.display = "block";
+        nike.style.display = "none";
+        puma.style.display = "none";
+        reebok.style.display = "none";
+        productAllMain.style.display = "none";
+    });
+    GoToNike.addEventListener("click",()=>{
+        adidas.style.display = "none";
+        asics.style.display = "none";
+        converse.style.display = "none";
+        newbalance.style.display = "none";
+        nike.style.display = "block";
+        puma.style.display = "none";
+        reebok.style.display = "none";
+        productAllMain.style.display = "none";
+    });
+    GoToPuma.addEventListener("click",()=>{
+        adidas.style.display = "none";
+        asics.style.display = "none";
+        converse.style.display = "none";
+        newbalance.style.display = "none";
+        nike.style.display = "none";
+        puma.style.display = "block";
+        reebok.style.display = "none";
+        productAllMain.style.display = "none";
+    });
+    GoToReebok.addEventListener("click",()=>{
+        adidas.style.display = "none";
+        asics.style.display = "none";
+        converse.style.display = "none";
+        newbalance.style.display = "none";
+        nike.style.display = "none";
+        puma.style.display = "none";
+        reebok.style.display = "block";
+        productAllMain.style.display = "none";
+    });
+    const LogoSite = document.getElementById("LogoSite");
+    LogoSite.addEventListener("click",()=>{
+        DomHomeSite.style.display="block";
+        DomProduct.style.display="none";
+        adidas.style.display="none";
+        asics.style.display="none";
+        converse.style.display="none";
+        newbalance.style.display="none";
+        nike.style.display="none";
+        puma.style.display="none";
+        reebok.style.display="none";
+    });
 }

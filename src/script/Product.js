@@ -44,4 +44,18 @@ export function product(productId){
         ProductDescription.innerText = "این کفش بهترین کفش بازار با راحتی بی نظیر است";
     }
     main();
+    let ProductNumber = document.getElementById("ProductNumber");
+    ProductNumber.value = 1;
+    ProductNumber.addEventListener("change",()=>{
+        let number = ProductNumber.value;
+        number = number*1;
+        console.log(typeof number);
+        console.log(number);
+        let x = ProductObject.price*1;
+        console.log(x);
+        let num = (x)*(number);
+        console.log(num);
+        console.log(typeof num);
+        ProductPrice.innerText = `قیمت:${num}$`;
+    })
 }

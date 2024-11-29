@@ -80,38 +80,39 @@
     </div>
     <div id="HomeSite" class="hidden">
       <header class="flex justify-between">
-        <img src="src/assets/LogoSite.png" height="298" width="513" alt="LogoSite" class="w-[100px]"/>
+        <img src="src/assets/LogoSite.png" height="298" width="513" alt="LogoSite" class="w-[100px]" id="LogoSite"/>
         <label class="bg-gray-300 h-[25px] mt-[8px] rounded-[40px]">
-          <input type="text" placeholder="جستوجو کنید..." class="bg-gray-300 rounded-[40px]">
+          <input type="text" placeholder="جستوجو کنید..." class="bg-gray-300 rounded-[40px]" id="search">
           <button>
-            <img src="src/assets/magnifying-glass-search-svgrepo-com.svg" alt="Magnifying Glass" class="w-[20px] rounded-[40px]">
+            <img src="src/assets/magnifying-glass-search-svgrepo-com.svg" alt="Magnifying Glass" class="w-[20px] rounded-[40px]" id="MagnifyingGlassSearch">
           </button>
         </label>
         <img src="src/assets/User avatar.png" height="512" width="512" alt="avatar" class="w-[40px] h-[40px]"/>
       </header>
+      <div class="absolute m-auto bg-white w-[200px] h-[200px] overflow-y-auto z-auto left-0 right-0 top-0 bottom-0 mt-[58px] mr-[34%] hidden" id="HistorySearch"></div>
       <main class="" id="DomHomeSite">
-        <div class="w-full bg-gray-400 text-center" style="direction: ltr">
+        <div class="w-full bg-gray-400 text-center" style="direction: ltr" id="tik">
           <label>adidas:
-            <input type="checkbox">
+            <input type="checkbox" id="CheckBoxAdidas">
           </label>
           <label>asics:
-            <input type="checkbox">
+            <input type="checkbox" id="CheckBoxAsics">
           </label>
           <label>converse:
-            <input type="checkbox">
+            <input type="checkbox" id="CheckBoxConverse">
           </label>
           <label>newbalance:
-            <input type="checkbox">
+            <input type="checkbox" id="CheckBoxNewbalance">
           </label>
           <label>nike:
-            <input type="checkbox">
+            <input type="checkbox" id="CheckBoxNike">
           </label>
           <br>
           <label>puma:
-            <input type="checkbox">
+            <input type="checkbox" id="CheckBoxPuma">
           </label>
           <label>reebok:
-            <input type="checkbox">
+            <input type="checkbox" id="CheckBoxReebok">
           </label>
         </div>
         <div class="flex justify-center" id="productAllMain">
@@ -458,7 +459,7 @@
           <p id="PurchasesNumber">تعداد خرید : 5</p>
         </div>
       </main>
-      <main class="hidden">
+      <main class="hidden" id="adidas">
         <hr class="w-full">
         <div class="m-auto mt-[3px] mb-[3px] w-[60%] rounded-[10px] border border-solid"><h1 class="text-red-900 text-center">آدیداس</h1></div>
         <div class="flex justify-center">
@@ -797,19 +798,28 @@
       <footer class="w-full bg-red-800 mt-[20px]">
         <div>
           <ul class="mr-[10px]">
-            <li>
+            <li id="ShoppingCart">
               <p class="font-bold">سبد خرید</p>
             </li>
-            <li>
+            <li id="OrderTracking">
               <p class="font-bold">پیگیری سفارشات</p>
             </li>
-            <li>
-              <p class="font-bold">برند ها</p>
+            <li id="Brands">
+              <p class="font-bold inline">برند ها</p>
             </li>
-            <li>
+            <li id="Likes">
               <p class="font-bold">مورد پسند ها</p>
             </li>
           </ul>
+          <div class="z-auto rounded-[10px] border border-solid w-[100px] h-[70px] overflow-y-auto absolute mt-[-75px] mr-[140px] bg-white hidden" id="Menu">
+            <p class="text-center" id="GoToAdidas">adidas</p>
+            <p class="text-center border-t border-solid" id="GoToAsics">asics</p>
+            <p class="text-center border-t border-solid" id="GoToConverse">converse</p>
+            <p class="text-center border-t border-solid" id="GoToNewbalance">newbalance</p>
+            <p class="text-center border-t border-solid" id="GoToNike">nike</p>
+            <p class="text-center border-t border-solid" id="GoToPuma">puma</p>
+            <p class="text-center border-t border-solid" id="GoToReebok">reebok</p>
+          </div>
         </div>
         <div class="w-[95%] m-auto">
           <hr class="mt-[5px] mb-[5px]">
