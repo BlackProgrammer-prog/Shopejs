@@ -22,26 +22,37 @@ export function search(){
     if (WordOfSearch==="adidas" || WordOfSearch==="کفش آدیداس" || WordOfSearch==="کفش adidas" || WordOfSearch==="Adidas"){
         Adidas.style.display = "block";
     }
-    if (WordOfSearch==="Asics" || WordOfSearch==="کفش اسیکس" || WordOfSearch==="کفش adidas" || WordOfSearch==="asics"){
+    else if (WordOfSearch==="Asics" || WordOfSearch==="کفش اسیکس" || WordOfSearch==="کفش adidas" || WordOfSearch==="asics"){
         Asics.style.display = "block";
     }
-    if (WordOfSearch==="Converse" || WordOfSearch==="کفش کانورس" || WordOfSearch==="کفش converse" || WordOfSearch==="converse"){
+    else if (WordOfSearch==="Converse" || WordOfSearch==="کفش کانورس" || WordOfSearch==="کفش converse" || WordOfSearch==="converse"){
         Converse.style.display = "block";
     }
-    if (WordOfSearch==="Newbalance" || WordOfSearch==="کفش نیو بالانس" || WordOfSearch==="کفش newbalance" || WordOfSearch==="newbalance"){
+    else if (WordOfSearch==="Newbalance" || WordOfSearch==="کفش نیو بالانس" || WordOfSearch==="کفش newbalance" || WordOfSearch==="newbalance"){
         Newbalance.style.display = "block";
     }
-    if (WordOfSearch==="Nike" || WordOfSearch==="کفش نایکی" || WordOfSearch==="کفش nike" || WordOfSearch==="nike"){
+    else if (WordOfSearch==="Nike" || WordOfSearch==="کفش نایکی" || WordOfSearch==="کفش nike" || WordOfSearch==="nike"){
         Nike.style.display = "block";
     }
-    if (WordOfSearch==="Puma" || WordOfSearch==="کفش پوما" || WordOfSearch==="کفش puma" || WordOfSearch==="puma"){
+    else if (WordOfSearch==="Puma" || WordOfSearch==="کفش پوما" || WordOfSearch==="کفش puma" || WordOfSearch==="puma"){
         Puma.style.display = "block";
     }
-    if (WordOfSearch==="Reebok" || WordOfSearch==="کفش ریباک" || WordOfSearch==="کفش reebok" || WordOfSearch==="reebok"){
+    else if (WordOfSearch==="Reebok" || WordOfSearch==="کفش ریباک" || WordOfSearch==="کفش reebok" || WordOfSearch==="reebok"){
         Reebok.style.display = "block";
     }
-    if (WordOfSearch===""){
+    else if (WordOfSearch===""){
         DomHomeSite.style.display = "block";
+    }
+    else {
+        DomHomeSite.style.display = "block";
+        DomProduct.style.display = "none";
+        Adidas.style.display = "none";
+        Asics.style.display = "none";
+        Converse.style.display = "none";
+        Newbalance.style.display = "none";
+        Nike.style.display = "none";
+        Puma.style.display = "none";
+        Reebok.style.display = "none";
     }
     // Search.value = "";
 }
@@ -54,11 +65,13 @@ export function ShowHistory(){
         HistorySearchDiv.innerText = "";
         history.forEach((item)=>{
             const historyItem = document.createElement("div");
+            const line = document.createElement("hr");
             historyItem.innerText = item;
             historyItem.onclick = ()=>{
                 Search.value = item;
             };
             HistorySearchDiv.appendChild(historyItem);
+            HistorySearchDiv.appendChild(line);
         });
         HistorySearchDiv.classList.remove("hidden");
     }

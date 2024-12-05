@@ -91,6 +91,23 @@ function ClickInputSearch(){
     InputSearch.addEventListener("click",(event)=>{
         event.stopPropagation();
         HistorySearch.style.display = "block";
+        let history = JSON.parse(localStorage.getItem("HistorySearch")) || [];
+        const Search = document.getElementById("search");
+        const HistorySearchDiv = document.getElementById("HistorySearch");
+        if (history.length > 0){
+            HistorySearchDiv.innerText = "";
+            history.forEach((item)=>{
+                const historyItem = document.createElement("div");
+                const line = document.createElement("hr");
+                historyItem.innerText = item;
+                historyItem.onclick = ()=>{
+                    Search.value = item;
+                };
+                HistorySearchDiv.appendChild(line);
+                HistorySearchDiv.appendChild(historyItem);
+            });
+            HistorySearchDiv.classList.remove("hidden");
+        }
     });
     document.addEventListener("click",()=>{
         HistorySearch.style.display = "none";
